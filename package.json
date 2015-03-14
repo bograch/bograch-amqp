@@ -1,0 +1,19 @@
+{
+  "name": "bograch-amqp",
+  "version": "0.0.1",
+  "description": "An AMQP provider for the Bograch microservices communication library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bograch",
+    "amqp"
+  ],
+  "author": "Zoltan Kochan",
+  "license": "MIT",
+  "dependencies": {
+    "amqp-rpc": "0.0.8",
+    "bograch": "0.0.1"
+  }
+}

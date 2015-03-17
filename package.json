@@ -1,6 +1,6 @@
 {
   "name": "bograch-amqp",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "An AMQP provider for the Bograch microservices communication library",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,6 @@
   "author": "Zoltan Kochan",
   "license": "MIT",
   "dependencies": {
-    "bograch": "0.0.2",
     "amqp-rpc": "git+https://git@github.com/zkochan/node-amqp-rpc#ad5a4dfcfb8a2d557917b7c8f8fe13cdd812e278"
   }
 }

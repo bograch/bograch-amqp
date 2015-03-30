@@ -16,15 +16,13 @@ function AmqpProvider(options) {
   });
 }
 
-// NOTE: params are passed through a property in another object
-// because amqp-rpc can't pass strings for some reason
-AmqpProvider.prototype.call = function (message, params, cb) {
-  this._rpc.call(message, { params: params }, cb);
+AmqpProvider.prototype.call = function (message, args, cb) {
+  this._rpc.call(message, args, cb);
 };
 
 AmqpProvider.prototype.on = function (message, cb) {
-  this._rpc.on(message, function (params, ccb) {
-    cb(params.params, ccb);
+  this._rpc.on(message, function (args, ccb) {
+    cb(args, ccb);
   });
 };
 

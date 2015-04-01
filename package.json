@@ -1,18 +1,21 @@
 {
   "name": "bograch-amqp",
-  "version": "0.0.5",
-  "description": "An AMQP provider for the Bograch microservices communication library",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "version": "0.0.6",
+  "description": "An AMQP transport for Bograch.",
+  "main": "./lib",
   "keywords": [
     "bograch",
-    "amqp"
+    "amqp",
+    "transport"
   ],
   "author": "Zoltan Kochan",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zkochan/bograch-amqp.git"
+  },
   "dependencies": {
-    "amqp-rpc": "git+https://git@github.com/zkochan/node-amqp-rpc#39428883145bba4a6a3dde712cf9f9722f76bf62"
+    "amqp-rpc": "git+https://git@github.com/zkochan/node-amqp-rpc#39428883145bba4a6a3dde712cf9f9722f76bf62",
+    "bograch-transport": "0.0.1"
   }
 }

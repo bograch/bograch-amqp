@@ -11,15 +11,22 @@
     "amqp",
     "transport"
   ],
-  "author": "Zoltan Kochan",
+  "author": {
+    "name": "Zoltan Kochan",
+    "email": "zoltan.kochan@gmail.com",
+    "url": "http://kochan.io"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/zkochan/bograch-amqp.git"
+    "url": "git://github.com/bograch/bograch-amqp.git"
   },
   "dependencies": {
-    "amqp-rpc": "git+https://git@github.com/zkochan/node-amqp-rpc#39428883145bba4a6a3dde712cf9f9722f76bf62",
+    "amqp-rpc": "git+https://git@github.com/bograch/node-amqp-rpc#39428883145bba4a6a3dde712cf9f9722f76bf62",
     "bograch-transport": "0.0.1"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org"
   },
   "devDependencies": {
     "chai": "^2.2.0",
